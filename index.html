@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form class="password-app">
+        <div class="password-app__inner app-inner">
+
+            <h1 class="app-inner__title">Create a<br>
+                <span>Random Password</span>
+            </h1>
+
+            <div class="app-inner__generate-pass pass-generator">
+                <div class="pass-generator__input input-form">
+                    <input id="password" type="text" class="input-form__input" placeholder="Password..." maxlength="20">
+                    <i class="copy-pass-btn fa-solid fa-sheet-plastic"></i>
+                    <div class="pass-tooltip">Скопировать пароль</div>
+                </div>
+                <button type="button" onclick="addPasswordValue()" class="pass-generator__btn">
+                    <i class="fa-solid fa-bolt"></i>
+                    Generate Password
+                </button>                
+            </div>
+
+        </div>
+    </form>    
+    <script src="script.js"></script>
+</body>
+</html>
